@@ -1,5 +1,6 @@
 :root {
   --primary: #303030;
+  --secondary: #9a0c16;
 }
 
 body {
@@ -20,6 +21,9 @@ body {
 
 .text-primary {
   color: var(--primary);
+}
+.text-secondary {
+  color: var(--secondary);
 }
 
 /** 
@@ -51,5 +55,11 @@ body {
   .container {
     padding-left: 50px;
     padding-right: 50px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .container {
+    max-width: 100% !important;
   }
 }

@@ -423,7 +423,9 @@
         </div>
       </section>
 
-      <section class="py-[80px] bg-[#9A0C16] relative overflow-hidden">
+      <section
+        class="py-[30px] md:py-[50px] lg:py-[80px] bg-[#303030] md:bg-[#9A0C16] relative overflow-hidden"
+      >
         <div class="flex justify-center w-full absolute top-[-100px]">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -431,7 +433,7 @@
             height="276"
             viewBox="0 0 673 276"
             fill="none"
-            class=""
+            class="hidden md:block"
           >
             <path
               d="M673 157.5C673 233.715 276.307 276 178 276C79.6933 276 0 214.215 0 138C0 61.7847 79.6933 0 178 0C276.307 0 673 81.2847 673 157.5Z"
@@ -440,25 +442,47 @@
             />
           </svg>
         </div>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="355"
+          height="403"
+          viewBox="0 0 355 403"
+          fill="none"
+          class="absolute top-[-20px] right-[-100px] md:hidden"
+        >
+          <path
+            d="M354.288 196.212C354.288 303.511 181.432 402.717 61.8159 402.717C-57.7998 402.717 33.0103 355.62 33.0103 248.321C33.0103 141.022 -46.8137 0 72.802 0C192.418 0 354.288 88.913 354.288 196.212Z"
+            fill="#D9D9D9"
+            fill-opacity="0.1"
+          />
+        </svg>
         <div class="container">
-          <h2 class="font-[800] text-white text-[50px] mb-[100px]">
+          <h2
+            class="font-[800] text-white text-[20px] md:text-[50px] mb-[20px] md:mb-[50px] lg:mb-[100px]"
+          >
             Experiences
           </h2>
-          <div class="flex flex-wrap mt-[150px]">
+          <div
+            class="flex flex-wrap mt-[30px] md:mt-[100px] lg:mt-[150px] mx-[-15px]"
+          >
             <!-- First Card -->
 
-            <div class="item px-[15px] max-w-[33.33%] w-full relative">
+            <div
+              class="item w-full px-[15px] md:max-w-[33.33%] mb-[30px] md:mb-0 w-full relative"
+            >
               <div
-                class="item-wrapper pt-[30px] shadow-md min-h-[400px] relative bg-[#F5F4F1] p-[30px] rounded-[20px]"
+                class="item-wrapper shadow-md shadow-[#333] pt-[30px] shadow-md min-h-[200px] md:min-h-[400px] relative bg-[#F5F4F1] p-[30px] rounded-[10px] md:rounded-[20px]"
               >
                 <div
                   class="item-header w-full absolute top-[-30px] text-[24px] font-[800]"
                 >
-                  <span class="relative z-[2] text-[20px] mt-[15px] underline"
+                  <span
+                    class="relative z-[2] text-[20px] mt-[15px] underline hidden md:block"
                     >1st year</span
                   >
                   <span
-                    class="block absolute left-[150px] top-[-50px] w-[30px] h-[30px] rounded-full bg-[#F5F4F1]"
+                    class="block absolute left-[150px] top-[-50px] w-[30px] h-[30px] rounded-full bg-[#F5F4F1] hidden md:block"
                   ></span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -466,7 +490,7 @@
                     height="162"
                     viewBox="0 0 199 162"
                     fill="none"
-                    class="absolute z-[1] left-[-30px] top-[-30px]"
+                    class="absolute z-[1] left-[-30px] top-[-30px] hidden md:block"
                   >
                     <path
                       d="M198.065 86.5C198.065 127.921 190.482 161.5 117.913 161.5C45.3455 161.5 0.313965 127.921 0.313965 86.5C0.313965 45.0786 45.3455 0 117.913 0C190.482 0 98.8611 64.7094 198.065 86.5Z"
@@ -476,11 +500,21 @@
                 </div>
 
                 <div class="item-content relative z-[20]">
-                  <h3 class="text-secondary font-[800]">
+                  <span
+                    class="bg-[#9A0C16] absolute top-[-20px] left-[-20px] rounded-full h-[36px] w-[36px] inline-flex md:hidden items-center justify-center font-[800] text-[20px] text-white"
+                    >1</span
+                  >
+                  <span
+                    class="font-[800] text-[10px] mt-[-27px] mb-[10px] pl-[20px] block md:hidden"
+                    >st year</span
+                  >
+                  <h3
+                    class="text-black text-[10px] md:text-[16px] underline md:no-underline md:text-[#9a0c16] font-[800]"
+                  >
                     Major in Web Development
                   </h3>
                   <ul
-                    class="list-disc pt-[15px] pl-[15px] font-secondary font-[800]"
+                    class="list-disc text-[12px] md:text-[16px] pt-[15px] pl-[15px] font-secondary font-[800]"
                   >
                     <li>Created a calculator app</li>
                     <li>Created a todo-list app</li>
@@ -493,12 +527,14 @@
             </div>
 
             <!-- 2nd Card -->
-            <div class="item px-[15px] max-w-[33.33%] w-full relative">
+            <div
+              class="item w-full px-[15px] md:max-w-[33.33%] mb-[30px] md:mb-0 w-full relative"
+            >
               <div
-                class="item-wrapper pt-[30px] shadow-md min-h-[400px] relative bg-[#F5F4F1] p-[30px] rounded-[20px]"
+                class="item-wrapper shadow-md shadow-[#333] pt-[30px] shadow-md min-h-[200px] md:min-h-[400px] relative bg-[#F5F4F1] p-[30px] rounded-[10px] md:rounded-[20px]"
               >
                 <div
-                  class="item-header text-center w-full left-0 absolute top-[-30px] text-[24px] font-[800]"
+                  class="item-header text-center w-full left-0 absolute top-[-30px] text-[24px] font-[800] hidden md:block"
                 >
                   <span class="relative z-[2] text-[20px] mt-[15px] underline"
                     >2nd year</span
@@ -509,11 +545,21 @@
                 </div>
 
                 <div class="item-content relative z-[20]">
-                  <h3 class="text-secondary font-[800]">
+                  <span
+                    class="bg-[#9A0C16] absolute top-[-20px] left-[-20px] rounded-full h-[36px] w-[36px] inline-flex md:hidden items-center justify-center font-[800] text-[20px] text-white"
+                    >2</span
+                  >
+                  <span
+                    class="font-[800] text-[10px] mt-[-27px] mb-[10px] pl-[20px] block md:hidden"
+                    >nd year</span
+                  >
+                  <h3
+                    class="text-black text-[10px] md:text-[16px] underline md:no-underline md:text-[#9a0c16] font-[800]"
+                  >
                     Major in Programming & Information Management
                   </h3>
                   <ul
-                    class="list-disc pt-[15px] pl-[15px] font-secondary font-[800]"
+                    class="list-disc text-[12px] md:text-[16px] pt-[15px] pl-[15px] font-secondary font-[800]"
                   >
                     <li>Created a quiz app</li>
                     <li>Created a basic CRUD App using PHP</li>
@@ -525,12 +571,14 @@
             </div>
 
             <!-- 3rd Card -->
-            <div class="item px-[15px] max-w-[33.33%] w-full relative">
+            <div
+              class="item w-full px-[15px] md:max-w-[33.33%] mb-[30px] md:mb-0 w-full relative"
+            >
               <div
-                class="item-wrapper pt-[30px] shadow-md min-h-[400px] relative bg-[#F5F4F1] p-[30px] rounded-[20px]"
+                class="item-wrapper shadow-md shadow-[#333] pt-[30px] shadow-md min-h-[200px] md:min-h-[400px] relative bg-[#F5F4F1] p-[30px] rounded-[10px] md:rounded-[20px]"
               >
                 <div
-                  class="item-header pr-[50px] flex justify-end w-full absolute top-[-30px] text-[24px] font-[800]"
+                  class="item-header pr-[50px] flex justify-end w-full absolute top-[-30px] text-[24px] font-[800] hidden md:block"
                 >
                   <span class="relative z-[2] text-[20px] mt-[15px] underline"
                     >3rd year</span
@@ -554,11 +602,21 @@
                 </div>
 
                 <div class="item-content relative z-[20]">
-                  <h3 class="text-secondary font-[800]">
+                  <span
+                    class="bg-[#9A0C16] absolute top-[-20px] left-[-20px] rounded-full h-[36px] w-[36px] inline-flex md:hidden items-center justify-center font-[800] text-[20px] text-white"
+                    >3</span
+                  >
+                  <span
+                    class="font-[800] text-[10px] mt-[-27px] mb-[10px] pl-[20px] block md:hidden"
+                    >rd year</span
+                  >
+                  <h3
+                    class="text-black text-[10px] md:text-[16px] underline md:no-underline md:text-[#9a0c16] font-[800]"
+                  >
                     Major in Integrative Programming and Technologies
                   </h3>
                   <ul
-                    class="list-disc pt-[15px] pl-[15px] font-secondary font-[800]"
+                    class="list-disc text-[12px] md:text-[16px] pt-[15px] pl-[15px] font-secondary font-[800]"
                   >
                     <li>
                       Created an app using Spotify API with chat using socket.io
@@ -618,7 +676,7 @@
             </div>
           </div>
 
-          <div class="grid grid-cols-2 gap-[30px] mt-[50px]">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-[30px] mt-[50px]">
             <div>
               <div class="flex text-[24px]">
                 <span class="font-[800] mr-2">Email:</span>
@@ -730,7 +788,9 @@
       class="bg-primary py-[15px] md:py-[50px] text-white text-[12px] md:text-[16px] font-[800]"
     >
       <div class="container">
-        <div class="flex flex-wrap justify-center md:justify-between">
+        <div
+          class="flex flex-wrap justify-center items-center flex-col md:flex-row md:justify-between"
+        >
           <p>© 2024 Dio.cv. All rights reserved.</p>
           <p class="opacity-30 text-[10px] md:text-[16px] mt-[5px] md:mt-0">
             Made with ❤︎ by

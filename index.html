@@ -9,15 +9,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="./assets/favicon.png" />
     <link
       href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./style.css" />
+    <meta property="og:title" content="Dio.dev" />
+    <meta
+      property="og:description"
+      content="Let's build something awesome together."
+    />
+    <meta
+      name="og:image"
+      content="https://localnetwork.github.io/portfolio-cv/assets/og_image.png"
+    />
   </head>
   <body>
     <header
-      class="sticky z-[10000] bg-[#F5F4F1] py-[10px] top-0 shadow-md shadow-[#999999]"
+      class="sticky z-[10000] bg-[#F5F4F1] py-[10px] top-0 shadow-sm lg:shadow-md shadow-[#585757] lg:shadow-[#999999]"
     >
       <div class="container">
         <div class="flex justify-between">
@@ -95,7 +105,7 @@
             </a>
           </div>
           <div class="flex font-[800] items-center gap-[15px] text-[20px]">
-            Menu
+            <span class="hidden md:block">Menu</span>
             <span
               class="cursor-pointer bg-[#9A0C16] w-[50px] h-[50px] flex flex-col items-center justify-center p-[10px] rounded-full"
             >
@@ -108,9 +118,11 @@
     </header>
 
     <main>
-      <section class="hero py-[50px] relative overflow-hidden">
+      <section
+        class="hero py-[50px] bg-[#9A0C16] lg:bg-[#F5F4F1] relative overflow-hidden"
+      >
         <svg
-          class="shape-2 absolute top-[-100px] right-[-100px]"
+          class="shape-2 absolute top-[-100px] right-[-100px] hidden lg:block"
           xmlns="http://www.w3.org/2000/svg"
           width="466"
           height="447"
@@ -125,8 +137,13 @@
         </svg>
         <div class="container">
           <div class="flex">
-            <div class="w-[424px] pl-[20px] relative">
-              <div class="image min-h-[348px] min-w-[424px] relative">
+            <!-- SHOW DESKTOP -->
+            <div
+              class="w-[324px] hidden lg:block lg:w-[424px] pl-[20px] relative"
+            >
+              <div
+                class="image lg:min-h-[348px] min-w-[324px] lg:min-w-[424px] relative"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="424"
@@ -145,7 +162,7 @@
                   class="absolute top-0 left-0 w-full h-full flex items-center justify-center"
                 >
                   <img
-                    class="w-[250px] relative left-[-20px] top-[5px]"
+                    class="w-[150px] lg:w-[250px] relative left-[-20px] top-[5px]"
                     src="./assets/HeroImage.png"
                   />
                 </div>
@@ -165,23 +182,59 @@
                 </div>
               </div>
             </div>
-            <div class="w-[calc(100%-424px)] pl-[100px] pt-[80px]">
-              <h1 class="text-[80px] font-[800]">Diome Nike Potot</h1>
+            <!-- END SHOW DESKTOP -->
+
+            <div
+              class="w-full text-center lg:text-left lg:w-[calc(100%-424px)] lg:pl-[100px] lg:pt-[80px]"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="210"
+                height="246"
+                viewBox="0 0 210 246"
+                fill="none"
+                class="absolute top-[-10px] left-[-80px] lg:hidden"
+              >
+                <path
+                  d="M209.268 189.58C209.268 253.684 114.921 245.68 74.0334 245.68C33.1459 245.68 0 193.714 0 129.611C0 65.5076 57.0834 0 97.9709 0C138.858 0 209.268 125.477 209.268 189.58Z"
+                  fill="#303030"
+                  fill-opacity="0.1"
+                />
+              </svg>
+
+              <div class="block lg:hidden mb-[25px]">
+                <img
+                  class="w-[100px] lg:w-[250px] mx-auto relative top-[5px]"
+                  src="./assets/HeroImage.png"
+                />
+              </div>
+
+              <h1
+                class="text-white lg:text-[#303030] text-[30px] lg:text-[clamp(25px,5vw,80px)] font-[800]"
+              >
+                Diome Nike Potot
+              </h1>
               <p
-                class="text-[#303030] opacity-60 text-[32px] mt-[15px] font-secondary"
+                class="block lg:hidden text-[#F1848C] text-[16px] font-[800] mt-[15px] font-secondary"
+              >
+                BSIT-3A (Web Dev)
+              </p>
+
+              <p
+                class="hidden lg:block text-[#303030] opacity-60 text-[clamp(18px,1024px,32px)] mt-[15px] font-secondary"
               >
                 BSIT-3A (Web Development)
               </p>
 
-              <div class="mt-[120px]">
+              <div class="mt-[30px] lg:mt-[50px]">
                 <a
                   href="#"
-                  class="bg-[#9A0C16] inline-flex gap-[15px] items-center text-white py-[15px] pl-[35px] pr-[25px] rounded-[50px] font-bold text-[24px]"
+                  class="bg-[#F5F4F1] border border-[1px] border-[#ddd] text-[#303030] lg:text-white lg:bg-[#9A0C16] inline-flex gap-[15px] justify-center items-center py-[5px] px-[15px] lg:py-[15px] lg:pl-[35px] lg:pr-[25px] rounded-[50px] font-[800] lg:font-bold text-[12px] lg:text-[24px]"
                 >
                   Download Resume
                   <div class="relative pl-[15px]">
                     <span
-                      class="h-[calc(100%+30px)] w-[1px] bg-white absolute top-[-15px] left-0"
+                      class="h-full lg:h-[calc(100%+30px)] w-[1px] bg-[#ddd] lg:bg-white absolute top-0 lg:top-[-15px] left-0"
                     ></span>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -190,6 +243,7 @@
                       height="44"
                       viewBox="0 0 40 44"
                       fill="none"
+                      class="brightness-[.2] lg:brightness-100 w-[20px] lg:w-[40px] h-auto"
                     >
                       <rect
                         y="-0.00602722"
@@ -219,8 +273,37 @@
                     </svg>
                   </div>
                 </a>
-                <p class="mt-[20px] font-[800] text-[24px]">
-                  Scroll down for more
+
+                <div
+                  class="mt-[30px] pb-[80px] flex lg:hidden justify-center brightness-[10] items-center gap-[10px]"
+                >
+                  <div class="icon icon-fb w-[30px] h-[30px]"></div>
+                  <div class="icon icon-linkedin w-[30px] h-[30px]"></div>
+                  <div class="icon icon-github w-[30px] h-[30px]"></div>
+                  <div class="icon icon-drupal w-[30px] h-[30px]"></div>
+                  <div class="icon icon-youtube w-[30px] h-[30px]"></div>
+                </div>
+                <p
+                  class="mt-[20px] absolute bottom-[5px] lg:bottom-0 lg:relative left-0 right-0 flex flex-col items-center justify-center lg:justify-start lg:items-start text-white lg:text-[#303030] lg:font-[800] text-[10px] lg:text-[24px]"
+                >
+                  <span class="block lg:hidden"> Scroll for more </span>
+                  <span class="hidden lg:block"> Scroll down for more </span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                    data-slot="icon"
+                    class="size-6 lg:hidden"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                    ></path>
+                  </svg>
                 </p>
               </div>
             </div>
@@ -229,7 +312,7 @@
       </section>
 
       <section
-        class="bg-[#303030] text-white py-[100px] relative overflow-hidden"
+        class="bg-white md:bg-[#303030] text-[#303030] md:text-white py-[100px] relative overflow-hidden"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -624,7 +707,16 @@
       <div class="container">
         <div class="flex flex-wrap justify-between">
           <p>© 2024 Dio.cv. All rights reserved.</p>
-          <p class="opacity-30">Made with ❤︎ by Dio.dev</p>
+          <p class="opacity-30">
+            Made with ❤︎ by
+            <a
+              href="https://dio-ddev.vercel.app/"
+              class="underline"
+              target="_blank"
+            >
+              Dio.dev
+            </a>
+          </p>
         </div>
       </div>
     </footer>

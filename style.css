@@ -55,15 +55,21 @@ body {
   background-image: url("./icons/youtube.svg");
 }
 
-@media (min-width: 1200px) {
+@media (max-width: 1535px) {
   .container {
-    padding-left: 50px;
-    padding-right: 50px;
+    max-width: 100% !important;
   }
 }
 
-@media (max-width: 1199px) {
+@media (min-width: 1200px) {
   .container {
-    max-width: 100% !important;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media (min-width: 1536px) {
+  .container {
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }

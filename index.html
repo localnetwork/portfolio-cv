@@ -472,7 +472,7 @@
               class="item w-full px-[15px] md:max-w-[33.33%] mb-[30px] md:mb-0 w-full relative"
             >
               <div
-                class="item-wrapper shadow-md shadow-[#333] pt-[30px] shadow-md min-h-[200px] md:min-h-[400px] relative bg-[#F5F4F1] p-[30px] rounded-[10px] md:rounded-[20px]"
+                class="item-wrapper shadow-md shadow-[#333] pt-[30px] shadow-md min-h-[200px] md:h-[400px] relative bg-[#F5F4F1] p-[30px] rounded-[10px] md:rounded-[20px]"
               >
                 <div
                   class="item-header w-full absolute top-[-30px] text-[24px] font-[800]"
@@ -531,7 +531,7 @@
               class="item w-full px-[15px] md:max-w-[33.33%] mb-[30px] md:mb-0 w-full relative"
             >
               <div
-                class="item-wrapper shadow-md shadow-[#333] pt-[30px] shadow-md min-h-[200px] md:min-h-[400px] relative bg-[#F5F4F1] p-[30px] rounded-[10px] md:rounded-[20px]"
+                class="item-wrapper shadow-md shadow-[#333] pt-[30px] shadow-md min-h-[200px] md:h-[400px] relative bg-[#F5F4F1] p-[30px] rounded-[10px] md:rounded-[20px]"
               >
                 <div
                   class="item-header text-center w-full left-0 absolute top-[-30px] text-[24px] font-[800] hidden md:block"
@@ -575,7 +575,7 @@
               class="item w-full px-[15px] md:max-w-[33.33%] mb-[30px] md:mb-0 w-full relative"
             >
               <div
-                class="item-wrapper shadow-md shadow-[#333] pt-[30px] shadow-md min-h-[200px] md:min-h-[400px] relative bg-[#F5F4F1] p-[30px] rounded-[10px] md:rounded-[20px]"
+                class="item-wrapper shadow-md shadow-[#333] pt-[30px] shadow-md min-h-[200px] md:h-[400px] relative bg-[#F5F4F1] p-[30px] rounded-[10px] md:rounded-[20px]"
               >
                 <div
                   class="item-header pr-[50px] flex justify-end w-full absolute top-[-30px] text-[24px] font-[800] hidden md:block"
@@ -635,14 +635,16 @@
         </div>
       </section>
 
-      <section class="py-[100px] relative overflow-hidden bg-[#F5F4F1]">
+      <section
+        class="py-[30px] md:py-[50px] lg:py-[100px] relative overflow-hidden bg-[#F5F4F1]"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="500"
           height="482"
           viewBox="0 0 500 482"
           fill="none"
-          class="absolute top-0 left-[-100px]"
+          class="absolute top-0 left-[-100px] hidden md:block"
         >
           <path
             d="M446.557 296.71C264.007 346.888 411.109 481.57 224.733 481.57C38.3573 481.57 0 392.414 0 239.699C0 86.9844 218.362 0 404.738 0C591.113 0 446.557 143.995 446.557 296.71Z"
@@ -651,14 +653,16 @@
           />
         </svg>
         <div class="container relative">
-          <div class="grid grid-cols-2 gap-[30px]">
+          <div class="grid lg:grid-cols-2 gap-[30px]">
             <div>
-              <h2 class="font-[800] text-[50px] mb-[20px]">Contact Us</h2>
-              <p class="text-[30px] font-secondary">
+              <h2 class="font-[800] text-[20px] md:text-[50px] mb-[20px]">
+                Contact Us
+              </h2>
+              <p class="text-[12px] md:text-[30px] font-secondary">
                 Let's talk about everything.
               </p>
             </div>
-            <div>
+            <div class="hidden lg:block">
               <h3
                 class="font-[800] text-black opacity-70 mb-[15px] text-[30px]"
               >
@@ -676,20 +680,26 @@
             </div>
           </div>
 
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-[30px] mt-[50px]">
+          <div
+            class="grid lg:grid-cols-2 gap-[30px] mt-[20px] md:mt-[30px] lg:mt-[50px]"
+          >
             <div>
-              <div class="flex text-[24px]">
+              <div class="flex text-[12px] md:text-[24px]">
                 <span class="font-[800] mr-2">Email:</span>
-                <span class="font-secondary font-normal"
+                <span
+                  class="font-secondary text-secondary md:text-[#303030] underline md:no-underline font-normal"
                   >diomenikep@gmail.com
                 </span>
               </div>
-              <div class="flex text-[24px]">
+              <div class="flex text-[12px] md:text-[24px]">
                 <span class="font-[800] mr-2">Contact No:</span>
-                <span class="font-secondary font-normal">09065641184 </span>
+                <span
+                  class="font-secondary text-secondary md:text-[#303030] underline md:no-underline font-normal"
+                  >09065641184
+                </span>
               </div>
             </div>
-            <div>
+            <div class="hidden lg:block">
               <h3
                 class="font-[800] text-black opacity-70 mb-[15px] text-[30px]"
               >
@@ -704,44 +714,60 @@
               </div>
             </div>
           </div>
-          <div class="form-block mt-[30px]">
-            <form action="#" class="w-full grid grid-cols-2 gap-[30px]">
+          <div class="form-block mt-[30px] leading-[16px] md:leading-normal">
+            <form action="#" class="w-full md:grid grid-cols-2 gap-[30px]">
               <div>
-                <div class="form-item mb-[15px] text-[30px]">
-                  <label>Name <span class="text-secondary">*</span> </label>
+                <div
+                  class="form-item mb-[15px] text-[12px] md:text-[24px] lg:text-[30px]"
+                >
+                  <label class=""
+                    >Name <span class="text-secondary">*</span>
+                  </label>
                   <input
                     type="text"
-                    class="border border-[#ddd] rounded-[20px] w-full min-h-[97px] bg-white p-[15px]"
+                    class="border border-[#ddd] rounded-[10px] md:rounded-[20px] w-full h-[37px] md:h-[97px] bg-white p-[15px]"
                   />
                 </div>
-                <div class="form-item mb-[15px] text-[30px]">
-                  <label>Email <span class="text-secondary">*</span> </label>
+                <div
+                  class="form-item mb-[15px] text-[12px] md:text-[24px] lg:text-[30px]"
+                >
+                  <label class=""
+                    >Email <span class="text-secondary">*</span>
+                  </label>
                   <input
                     type="email"
-                    class="border border-[#ddd] rounded-[20px] w-full min-h-[97px] bg-white p-[15px]"
+                    class="border border-[#ddd] rounded-[10px] md:rounded-[20px] w-full h-[37px] md:h-[97px] bg-white p-[15px]"
                   />
                 </div>
-                <div class="form-item mb-[15px] text-[30px]">
-                  <label>Subject <span class="text-secondary">*</span> </label>
+                <div
+                  class="form-item mb-[15px] text-[12px] md:text-[24px] lg:text-[30px]"
+                >
+                  <label class=""
+                    >Subject <span class="text-secondary">*</span>
+                  </label>
                   <input
                     type="text"
-                    class="border border-[#ddd] rounded-[20px] w-full min-h-[97px] bg-white p-[15px]"
+                    class="border border-[#ddd] rounded-[10px] md:rounded-[20px] w-full h-[37px] md:h-[97px] bg-white p-[15px]"
                   />
                 </div>
               </div>
               <div>
-                <div class="form-item mb-[15px] text-[30px]">
-                  <label>Message <span class="text-secondary">*</span> </label>
+                <div
+                  class="form-item mb-[15px] text-[12px] md:text-[24px] lg:text-[30px]"
+                >
+                  <label class=""
+                    >Message <span class="text-secondary">*</span>
+                  </label>
                   <textarea
                     type="text"
-                    class="border border-[#ddd] rounded-[20px] w-full min-h-[410px] bg-white p-[15px] appearance-none resize-none"
+                    class="border border-[#ddd] rounded-[20px] w-full min-h-[150px] md:min-h-[410px] bg-white p-[15px] appearance-none resize-none"
                   ></textarea>
                 </div>
               </div>
-              <div class="form-action">
+              <div class="form-action mt-[20px] md:mt-0">
                 <a
                   href="#"
-                  class="bg-[#9A0C16] inline-flex gap-[15px] items-center text-white py-[15px] pl-[35px] pr-[25px] rounded-[50px] font-bold text-[24px]"
+                  class="bg-[#9A0C16] inline-flex gap-[15px] items-center text-white shadow shadow-md shadow-[#727272] pr-[30px] px-[15px] py-[3px] md:py-[15px] md:pl-[35px] md:pr-[25px] rounded-[20px] md:rounded-[50px] font-[800] md:font-bold text-[12px] md:text-[24px]"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -750,6 +776,7 @@
                     height="30"
                     viewBox="0 0 32 30"
                     fill="none"
+                    class="w-[20px] md:w-[32px]"
                   >
                     <rect
                       width="31.6593"
@@ -780,6 +807,40 @@
                 </a>
               </div>
             </form>
+          </div>
+
+          <div
+            class="flex flex-col gap-[10px] mt-[50px] border-t-[1px] border-[#ddd] pt-[50px]"
+          >
+            <div class="">
+              <h3
+                class="font-[800] text-black opacity-70 mb-[15px] text-[20px]"
+              >
+                Location
+              </h3>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.9875102641854!2d123.95840707512374!3d10.262589468461082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a99af5762be06f%3A0xd4bee3697d587b49!2sCordova%20Public%20College!5e0!3m2!1sen!2sph!4v1725409631770!5m2!1sen!2sph"
+                width="100%"
+                height="133"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                class="border-[2px] border-[#ddd] bg-white"
+              ></iframe>
+            </div>
+
+            <div class="">
+              <h3 class="font-[800] text-black opacity-70 text-[20px]">
+                Connect with me:
+              </h3>
+              <div class="mt-[10px] flex items-center gap-[10px]">
+                <div class="icon icon-fb w-[30px] h-[30px]"></div>
+                <div class="icon icon-linkedin w-[30px] h-[30px]"></div>
+                <div class="icon icon-github w-[30px] h-[30px]"></div>
+                <div class="icon icon-drupal w-[30px] h-[30px]"></div>
+                <div class="icon icon-youtube w-[30px] h-[30px]"></div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
